@@ -1,8 +1,14 @@
 # Datadog changelog
 
+## 2.21.4
+
+* Add a service with local [internal traffic policy](https://kubernetes.io/docs/concepts/services-networking/service-traffic-policy/) for traces and dogstatsd.
+  This works only on Kubernetes 1.22 or more recent. 
+
 ## 2.21.3
 
 * Default Datadog Agent image to 7.30.1.
+
 ## 2.21.2
 
 * Fix Dogstatsd UDS socket configuration with a HostVolume when `useSocketVolume: true`.
