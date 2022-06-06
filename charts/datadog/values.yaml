@@ -35,6 +35,10 @@ datadog:
   # datadog.appKeyExistingSecret -- Use existing Secret which stores APP key instead of creating a new one
   ## If set, this parameter takes precedence over "appKey".
   appKeyExistingSecret:  # <DATADOG_APP_KEY_SECRET>
+  
+  proxy:
+    https: "http://<SSL_PROXY_SERVER_FOR_HTTPS>:<PORT>"
+    http: "https://<SSL_PROXY_SERVER_FOR_HTTP>:<PORT>"
 
   # datadog.securityContext -- Allows you to overwrite the default PodSecurityContext on the Daemonset or Deployment
   securityContext: {}
